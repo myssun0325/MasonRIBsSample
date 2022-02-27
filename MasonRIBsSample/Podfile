@@ -6,8 +6,8 @@ target 'MasonRIBsSample' do
   use_frameworks!
 
   # Pods for MasonRIBsSample
-    pod 'RIBs', '~> 0.9'
     pod 'SnapKit', '~> 5.0.0'
-    pod 'RxCocoa', '~> 6.5.0' 
+    pod 'RIBs', :git=> 'https://github.com/uber/RIBs', :tag => 'v0.10.0'
+    pod 'RxCocoa'
 
 end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B93084E1E1D69586347E826 /* Pods_MasonRIBsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58645C2A93DC8697AF888F7D /* Pods_MasonRIBsSample.framework */; };
 		9320447327CB34040038321D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320447227CB34040038321D /* AppDelegate.swift */; };
 		9320447527CB34040038321D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320447427CB34040038321D /* SceneDelegate.swift */; };
 		9320447727CB34040038321D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320447627CB34040038321D /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58645C2A93DC8697AF888F7D /* Pods_MasonRIBsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MasonRIBsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFC5B3FF8C59963D7593400 /* Pods-MasonRIBsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonRIBsSample.release.xcconfig"; path = "Target Support Files/Pods-MasonRIBsSample/Pods-MasonRIBsSample.release.xcconfig"; sourceTree = "<group>"; };
 		9320446F27CB34040038321D /* MasonRIBsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonRIBsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9320447227CB34040038321D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9320447427CB34040038321D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		9320447B27CB34050038321D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9320447E27CB34050038321D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9320448027CB34050038321D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B583662CCB41E8B35A23C3B8 /* Pods-MasonRIBsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonRIBsSample.debug.xcconfig"; path = "Target Support Files/Pods-MasonRIBsSample/Pods-MasonRIBsSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B93084E1E1D69586347E826 /* Pods_MasonRIBsSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		569218154F36F67444EB5963 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58645C2A93DC8697AF888F7D /* Pods_MasonRIBsSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9320446627CB34040038321D = {
 			isa = PBXGroup;
 			children = (
 				9320447127CB34040038321D /* MasonRIBsSample */,
 				9320447027CB34040038321D /* Products */,
+				ED7FD00E76EC93A06FBC744A /* Pods */,
+				569218154F36F67444EB5963 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = MasonRIBsSample;
 			sourceTree = "<group>";
 		};
+		ED7FD00E76EC93A06FBC744A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B583662CCB41E8B35A23C3B8 /* Pods-MasonRIBsSample.debug.xcconfig */,
+				8AFC5B3FF8C59963D7593400 /* Pods-MasonRIBsSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9320448327CB34050038321D /* Build configuration list for PBXNativeTarget "MasonRIBsSample" */;
 			buildPhases = (
+				8E8F248D274A7F5E3922F51C /* [CP] Check Pods Manifest.lock */,
 				9320446B27CB34040038321D /* Sources */,
 				9320446C27CB34040038321D /* Frameworks */,
 				9320446D27CB34040038321D /* Resources */,
+				A4231E0A3C72D8852BF41858 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E8F248D274A7F5E3922F51C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MasonRIBsSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4231E0A3C72D8852BF41858 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MasonRIBsSample/Pods-MasonRIBsSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MasonRIBsSample/Pods-MasonRIBsSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MasonRIBsSample/Pods-MasonRIBsSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9320446B27CB34040038321D /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		9320448427CB34050038321D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B583662CCB41E8B35A23C3B8 /* Pods-MasonRIBsSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +381,7 @@
 		};
 		9320448527CB34050038321D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AFC5B3FF8C59963D7593400 /* Pods-MasonRIBsSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
