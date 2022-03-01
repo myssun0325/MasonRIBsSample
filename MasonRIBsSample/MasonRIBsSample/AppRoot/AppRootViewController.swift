@@ -16,6 +16,10 @@ protocol AppRootPresentableListener: AnyObject {
 }
 
 final class AppRootViewController: UIViewController, AppRootPresentable, AppRootViewControllable {
-
+    
     weak var listener: AppRootPresentableListener?
+    
+    func present(viewController: ViewControllable) {
+        self.present(viewController.uiviewController, animated: true, completion: nil)
+    }
 }

@@ -12,6 +12,10 @@
 		734C958C27CBD05600E0BA4E /* AppRootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C958827CBD05600E0BA4E /* AppRootBuilder.swift */; };
 		734C958D27CBD05600E0BA4E /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C958927CBD05600E0BA4E /* AppRootInteractor.swift */; };
 		734C958F27CBD3D300E0BA4E /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C958E27CBD3D300E0BA4E /* AppComponent.swift */; };
+		734C959527CBD93200E0BA4E /* LoggedOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C959127CBD93200E0BA4E /* LoggedOutRouter.swift */; };
+		734C959627CBD93200E0BA4E /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C959227CBD93200E0BA4E /* LoggedOutViewController.swift */; };
+		734C959727CBD93200E0BA4E /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C959327CBD93200E0BA4E /* LoggedOutBuilder.swift */; };
+		734C959827CBD93200E0BA4E /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C959427CBD93200E0BA4E /* LoggedOutInteractor.swift */; };
 		8B93084E1E1D69586347E826 /* Pods_MasonRIBsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58645C2A93DC8697AF888F7D /* Pods_MasonRIBsSample.framework */; };
 		9320447327CB34040038321D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320447227CB34040038321D /* AppDelegate.swift */; };
 		9320447527CB34040038321D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320447427CB34040038321D /* SceneDelegate.swift */; };
@@ -26,6 +30,10 @@
 		734C958827CBD05600E0BA4E /* AppRootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootBuilder.swift; sourceTree = "<group>"; };
 		734C958927CBD05600E0BA4E /* AppRootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootInteractor.swift; sourceTree = "<group>"; };
 		734C958E27CBD3D300E0BA4E /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		734C959127CBD93200E0BA4E /* LoggedOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
+		734C959227CBD93200E0BA4E /* LoggedOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
+		734C959327CBD93200E0BA4E /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
+		734C959427CBD93200E0BA4E /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
 		8AFC5B3FF8C59963D7593400 /* Pods-MasonRIBsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonRIBsSample.release.xcconfig"; path = "Target Support Files/Pods-MasonRIBsSample/Pods-MasonRIBsSample.release.xcconfig"; sourceTree = "<group>"; };
 		9320446F27CB34040038321D /* MasonRIBsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonRIBsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9320447227CB34040038321D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,17 @@
 			path = AppRoot;
 			sourceTree = "<group>";
 		};
+		734C959027CBD91E00E0BA4E /* LoggedOut */ = {
+			isa = PBXGroup;
+			children = (
+				734C959127CBD93200E0BA4E /* LoggedOutRouter.swift */,
+				734C959227CBD93200E0BA4E /* LoggedOutViewController.swift */,
+				734C959327CBD93200E0BA4E /* LoggedOutBuilder.swift */,
+				734C959427CBD93200E0BA4E /* LoggedOutInteractor.swift */,
+			);
+			path = LoggedOut;
+			sourceTree = "<group>";
+		};
 		9320446627CB34040038321D = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +117,7 @@
 		9320447127CB34040038321D /* MasonRIBsSample */ = {
 			isa = PBXGroup;
 			children = (
+				734C959027CBD91E00E0BA4E /* LoggedOut */,
 				734C958527CBD04A00E0BA4E /* AppRoot */,
 				734C958327CBC17300E0BA4E /* App */,
 				9320447B27CB34050038321D /* Assets.xcassets */,
@@ -230,12 +250,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734C959827CBD93200E0BA4E /* LoggedOutInteractor.swift in Sources */,
 				734C958B27CBD05600E0BA4E /* AppRootViewController.swift in Sources */,
 				734C958F27CBD3D300E0BA4E /* AppComponent.swift in Sources */,
+				734C959727CBD93200E0BA4E /* LoggedOutBuilder.swift in Sources */,
 				734C958A27CBD05600E0BA4E /* AppRootRouter.swift in Sources */,
+				734C959527CBD93200E0BA4E /* LoggedOutRouter.swift in Sources */,
 				734C958D27CBD05600E0BA4E /* AppRootInteractor.swift in Sources */,
 				9320447327CB34040038321D /* AppDelegate.swift in Sources */,
 				9320447527CB34040038321D /* SceneDelegate.swift in Sources */,
+				734C959627CBD93200E0BA4E /* LoggedOutViewController.swift in Sources */,
 				734C958C27CBD05600E0BA4E /* AppRootBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
