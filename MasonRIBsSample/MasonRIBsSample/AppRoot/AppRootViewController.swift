@@ -19,7 +19,25 @@ final class AppRootViewController: UIViewController, AppRootPresentable, AppRoot
     
     weak var listener: AppRootPresentableListener?
     
-    func present(viewController: ViewControllable) {
-        self.present(viewController.uiviewController, animated: true, completion: nil)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .white
     }
+    
+    // MARK: - RootViewControllable
+    
+    func present(viewController: ViewControllable) {
+        present(viewController.uiviewController, animated: true, completion: nil)
+    }
+    
+    func dismiss(viewController: ViewControllable) {
+        if presentedViewController === viewController.uiviewController {
+            dismiss(animated: true, completion: nil)
+        }
+    }
+}
+
+extension AppRootViewController: LoggedInViewControllable {
+    
 }

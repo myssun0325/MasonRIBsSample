@@ -2,7 +2,7 @@
 //  AppRootBuilder.swift
 //  MasonRIBsSample
 //
-//  Created by YoungsunMoon on 2022/02/28.
+//  Created by YoungsunMoon on 2022/03/01.
 //
 
 import RIBs
@@ -15,6 +15,22 @@ protocol AppRootDependency: Dependency {
 final class AppRootComponent: Component<AppRootDependency> {
 
     // TODO: Declare 'fileprivate' dependencies that are only used by this RIB.
+    // @mason
+    let rootViewController: AppRootViewController
+    
+    init(dependency: AppRootDependency,
+         rootViewController: AppRootViewController) {
+        self.rootViewController = rootViewController
+        super.init(dependency: dependency)
+    }
+}
+
+extension AppRootComponent: LoggedOutDependency { }
+
+extension AppRootComponent: LoggedInDependency {
+    var loggedInViewController: LoggedInViewControllable {
+        return rootViewController
+    }
 }
 
 // MARK: - Builder
@@ -30,13 +46,16 @@ final class AppRootBuilder: Builder<AppRootDependency>, AppRootBuildable {
     }
 
     func build() -> LaunchRouting {
-        let component = AppRootComponent(dependency: dependency)
         let viewController = AppRootViewController()
+        let component = AppRootComponent(dependency: dependency,
+                                         rootViewController: viewController)
         let interactor = AppRootInteractor(presenter: viewController)
-        return AppRootRouter(interactor: interactor, viewController: viewController, loggedOutBuilder: LoggedOutBuilder(dependency: component))
+        
+        let loggedOutBuilder = LoggedOutBuilder(dependency: component)
+        let loggedInBuilder = LoggedInBuilder(dependency: component)
+        return AppRootRouter(interactor: interactor,
+                             viewController: viewController,
+                             loggedOutBuilder: loggedOutBuilder,
+                             loggedInBuilder: loggedInBuilder)
     }
-}
-
-extension AppRootComponent: LoggedOutDependency {
-    // TODO: Implement properties to provide for LoggedOut scope.
 }

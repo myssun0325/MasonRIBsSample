@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		734C958A27CBD05600E0BA4E /* AppRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C958627CBD05600E0BA4E /* AppRootRouter.swift */; };
-		734C958B27CBD05600E0BA4E /* AppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C958727CBD05600E0BA4E /* AppRootViewController.swift */; };
-		734C958C27CBD05600E0BA4E /* AppRootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C958827CBD05600E0BA4E /* AppRootBuilder.swift */; };
-		734C958D27CBD05600E0BA4E /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C958927CBD05600E0BA4E /* AppRootInteractor.swift */; };
-		734C958F27CBD3D300E0BA4E /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C958E27CBD3D300E0BA4E /* AppComponent.swift */; };
+		731CDB3127DC86A60098ED4F /* LoggedInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB2E27DC86A60098ED4F /* LoggedInRouter.swift */; };
+		731CDB3227DC86A60098ED4F /* LoggedInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB2F27DC86A60098ED4F /* LoggedInBuilder.swift */; };
+		731CDB3327DC86A60098ED4F /* LoggedInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB3027DC86A60098ED4F /* LoggedInInteractor.swift */; };
+		731CDB4527DC964E0098ED4F /* OffGameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB4127DC964E0098ED4F /* OffGameRouter.swift */; };
+		731CDB4627DC964E0098ED4F /* OffGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB4227DC964E0098ED4F /* OffGameViewController.swift */; };
+		731CDB4727DC964E0098ED4F /* OffGameBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB4327DC964E0098ED4F /* OffGameBuilder.swift */; };
+		731CDB4827DC964E0098ED4F /* OffGameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB4427DC964E0098ED4F /* OffGameInteractor.swift */; };
+		731CDB5427DCB4B80098ED4F /* TicTacToeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB5027DCB4B80098ED4F /* TicTacToeRouter.swift */; };
+		731CDB5527DCB4B80098ED4F /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB5127DCB4B80098ED4F /* TicTacToeViewController.swift */; };
+		731CDB5627DCB4B80098ED4F /* TicTacToeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB5227DCB4B80098ED4F /* TicTacToeBuilder.swift */; };
+		731CDB5727DCB4B80098ED4F /* TicTacToeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB5327DCB4B80098ED4F /* TicTacToeInteractor.swift */; };
+		731CDB6327DCD1B00098ED4F /* MasonRIBsSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB6227DCD1B00098ED4F /* MasonRIBsSampleTests.swift */; };
+		731CDB6A27DCD1CA0098ED4F /* AppRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB6927DCD1CA0098ED4F /* AppRootRouter.swift */; };
+		731CDB6C27DCD2140098ED4F /* TicTacToeMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CDB6B27DCD2140098ED4F /* TicTacToeMocks.swift */; };
 		734C959527CBD93200E0BA4E /* LoggedOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C959127CBD93200E0BA4E /* LoggedOutRouter.swift */; };
 		734C959627CBD93200E0BA4E /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C959227CBD93200E0BA4E /* LoggedOutViewController.swift */; };
 		734C959727CBD93200E0BA4E /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C959327CBD93200E0BA4E /* LoggedOutBuilder.swift */; };
 		734C959827CBD93200E0BA4E /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C959427CBD93200E0BA4E /* LoggedOutInteractor.swift */; };
+		734C95A527CDDD9100E0BA4E /* AppRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C95A127CDDD9100E0BA4E /* AppRootRouter.swift */; };
+		734C95A627CDDD9100E0BA4E /* AppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C95A227CDDD9100E0BA4E /* AppRootViewController.swift */; };
+		734C95A727CDDD9100E0BA4E /* AppRootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C95A327CDDD9100E0BA4E /* AppRootBuilder.swift */; };
+		734C95A827CDDD9100E0BA4E /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C95A427CDDD9100E0BA4E /* AppRootInteractor.swift */; };
+		734C95AA27CDDDF200E0BA4E /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C95A927CDDDF200E0BA4E /* AppComponent.swift */; };
 		8B93084E1E1D69586347E826 /* Pods_MasonRIBsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58645C2A93DC8697AF888F7D /* Pods_MasonRIBsSample.framework */; };
 		9320447327CB34040038321D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320447227CB34040038321D /* AppDelegate.swift */; };
 		9320447527CB34040038321D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320447427CB34040038321D /* SceneDelegate.swift */; };
@@ -23,17 +37,42 @@
 		9320447F27CB34050038321D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9320447D27CB34050038321D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		731CDB6427DCD1B00098ED4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9320446727CB34040038321D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9320446E27CB34040038321D;
+			remoteInfo = MasonRIBsSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		58645C2A93DC8697AF888F7D /* Pods_MasonRIBsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MasonRIBsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		734C958627CBD05600E0BA4E /* AppRootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootRouter.swift; sourceTree = "<group>"; };
-		734C958727CBD05600E0BA4E /* AppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
-		734C958827CBD05600E0BA4E /* AppRootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootBuilder.swift; sourceTree = "<group>"; };
-		734C958927CBD05600E0BA4E /* AppRootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootInteractor.swift; sourceTree = "<group>"; };
-		734C958E27CBD3D300E0BA4E /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		731CDB2E27DC86A60098ED4F /* LoggedInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInRouter.swift; sourceTree = "<group>"; };
+		731CDB2F27DC86A60098ED4F /* LoggedInBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInBuilder.swift; sourceTree = "<group>"; };
+		731CDB3027DC86A60098ED4F /* LoggedInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInInteractor.swift; sourceTree = "<group>"; };
+		731CDB4127DC964E0098ED4F /* OffGameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffGameRouter.swift; sourceTree = "<group>"; };
+		731CDB4227DC964E0098ED4F /* OffGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffGameViewController.swift; sourceTree = "<group>"; };
+		731CDB4327DC964E0098ED4F /* OffGameBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffGameBuilder.swift; sourceTree = "<group>"; };
+		731CDB4427DC964E0098ED4F /* OffGameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffGameInteractor.swift; sourceTree = "<group>"; };
+		731CDB5027DCB4B80098ED4F /* TicTacToeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeRouter.swift; sourceTree = "<group>"; };
+		731CDB5127DCB4B80098ED4F /* TicTacToeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
+		731CDB5227DCB4B80098ED4F /* TicTacToeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeBuilder.swift; sourceTree = "<group>"; };
+		731CDB5327DCB4B80098ED4F /* TicTacToeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeInteractor.swift; sourceTree = "<group>"; };
+		731CDB6027DCD1B00098ED4F /* MasonRIBsSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasonRIBsSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		731CDB6227DCD1B00098ED4F /* MasonRIBsSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasonRIBsSampleTests.swift; sourceTree = "<group>"; };
+		731CDB6927DCD1CA0098ED4F /* AppRootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootRouter.swift; sourceTree = "<group>"; };
+		731CDB6B27DCD2140098ED4F /* TicTacToeMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeMocks.swift; sourceTree = "<group>"; };
 		734C959127CBD93200E0BA4E /* LoggedOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
 		734C959227CBD93200E0BA4E /* LoggedOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
 		734C959327CBD93200E0BA4E /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
 		734C959427CBD93200E0BA4E /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
+		734C95A127CDDD9100E0BA4E /* AppRootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootRouter.swift; sourceTree = "<group>"; };
+		734C95A227CDDD9100E0BA4E /* AppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
+		734C95A327CDDD9100E0BA4E /* AppRootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootBuilder.swift; sourceTree = "<group>"; };
+		734C95A427CDDD9100E0BA4E /* AppRootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootInteractor.swift; sourceTree = "<group>"; };
+		734C95A927CDDDF200E0BA4E /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		8AFC5B3FF8C59963D7593400 /* Pods-MasonRIBsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonRIBsSample.release.xcconfig"; path = "Target Support Files/Pods-MasonRIBsSample/Pods-MasonRIBsSample.release.xcconfig"; sourceTree = "<group>"; };
 		9320446F27CB34040038321D /* MasonRIBsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonRIBsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9320447227CB34040038321D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +84,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		731CDB5D27DCD1B00098ED4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9320446C27CB34040038321D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,12 +110,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		731CDB2227DC7F190098ED4F /* TicTacToeTests */ = {
+			isa = PBXGroup;
+			children = (
+				731CDB5B27DCD0490098ED4F /* AppRoot */,
+				731CDB6B27DCD2140098ED4F /* TicTacToeMocks.swift */,
+			);
+			path = TicTacToeTests;
+			sourceTree = "<group>";
+		};
+		731CDB2D27DC863B0098ED4F /* LoggedIn */ = {
+			isa = PBXGroup;
+			children = (
+				731CDB2E27DC86A60098ED4F /* LoggedInRouter.swift */,
+				731CDB2F27DC86A60098ED4F /* LoggedInBuilder.swift */,
+				731CDB3027DC86A60098ED4F /* LoggedInInteractor.swift */,
+			);
+			path = LoggedIn;
+			sourceTree = "<group>";
+		};
+		731CDB4027DC963E0098ED4F /* OffGame */ = {
+			isa = PBXGroup;
+			children = (
+				731CDB4127DC964E0098ED4F /* OffGameRouter.swift */,
+				731CDB4227DC964E0098ED4F /* OffGameViewController.swift */,
+				731CDB4327DC964E0098ED4F /* OffGameBuilder.swift */,
+				731CDB4427DC964E0098ED4F /* OffGameInteractor.swift */,
+			);
+			path = OffGame;
+			sourceTree = "<group>";
+		};
+		731CDB4F27DCB4A50098ED4F /* TicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				731CDB5027DCB4B80098ED4F /* TicTacToeRouter.swift */,
+				731CDB5127DCB4B80098ED4F /* TicTacToeViewController.swift */,
+				731CDB5227DCB4B80098ED4F /* TicTacToeBuilder.swift */,
+				731CDB5327DCB4B80098ED4F /* TicTacToeInteractor.swift */,
+			);
+			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		731CDB5B27DCD0490098ED4F /* AppRoot */ = {
+			isa = PBXGroup;
+			children = (
+				731CDB6927DCD1CA0098ED4F /* AppRootRouter.swift */,
+			);
+			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		731CDB6127DCD1B00098ED4F /* MasonRIBsSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				731CDB6227DCD1B00098ED4F /* MasonRIBsSampleTests.swift */,
+			);
+			path = MasonRIBsSampleTests;
+			sourceTree = "<group>";
+		};
 		734C958327CBC17300E0BA4E /* App */ = {
 			isa = PBXGroup;
 			children = (
 				9320447227CB34040038321D /* AppDelegate.swift */,
 				9320447427CB34040038321D /* SceneDelegate.swift */,
-				734C958E27CBD3D300E0BA4E /* AppComponent.swift */,
+				734C95A927CDDDF200E0BA4E /* AppComponent.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -77,10 +180,10 @@
 		734C958527CBD04A00E0BA4E /* AppRoot */ = {
 			isa = PBXGroup;
 			children = (
-				734C958627CBD05600E0BA4E /* AppRootRouter.swift */,
-				734C958727CBD05600E0BA4E /* AppRootViewController.swift */,
-				734C958827CBD05600E0BA4E /* AppRootBuilder.swift */,
-				734C958927CBD05600E0BA4E /* AppRootInteractor.swift */,
+				734C95A127CDDD9100E0BA4E /* AppRootRouter.swift */,
+				734C95A227CDDD9100E0BA4E /* AppRootViewController.swift */,
+				734C95A327CDDD9100E0BA4E /* AppRootBuilder.swift */,
+				734C95A427CDDD9100E0BA4E /* AppRootInteractor.swift */,
 			);
 			path = AppRoot;
 			sourceTree = "<group>";
@@ -99,7 +202,9 @@
 		9320446627CB34040038321D = {
 			isa = PBXGroup;
 			children = (
+				731CDB2227DC7F190098ED4F /* TicTacToeTests */,
 				9320447127CB34040038321D /* MasonRIBsSample */,
+				731CDB6127DCD1B00098ED4F /* MasonRIBsSampleTests */,
 				9320447027CB34040038321D /* Products */,
 				ED7FD00E76EC93A06FBC744A /* Pods */,
 				569218154F36F67444EB5963 /* Frameworks */,
@@ -110,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				9320446F27CB34040038321D /* MasonRIBsSample.app */,
+				731CDB6027DCD1B00098ED4F /* MasonRIBsSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +223,9 @@
 		9320447127CB34040038321D /* MasonRIBsSample */ = {
 			isa = PBXGroup;
 			children = (
+				731CDB4F27DCB4A50098ED4F /* TicTacToe */,
+				731CDB4027DC963E0098ED4F /* OffGame */,
+				731CDB2D27DC863B0098ED4F /* LoggedIn */,
 				734C959027CBD91E00E0BA4E /* LoggedOut */,
 				734C958527CBD04A00E0BA4E /* AppRoot */,
 				734C958327CBC17300E0BA4E /* App */,
@@ -139,6 +248,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		731CDB5F27DCD1B00098ED4F /* MasonRIBsSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 731CDB6627DCD1B00098ED4F /* Build configuration list for PBXNativeTarget "MasonRIBsSampleTests" */;
+			buildPhases = (
+				731CDB5C27DCD1B00098ED4F /* Sources */,
+				731CDB5D27DCD1B00098ED4F /* Frameworks */,
+				731CDB5E27DCD1B00098ED4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				731CDB6527DCD1B00098ED4F /* PBXTargetDependency */,
+			);
+			name = MasonRIBsSampleTests;
+			productName = MasonRIBsSampleTests;
+			productReference = 731CDB6027DCD1B00098ED4F /* MasonRIBsSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9320446E27CB34040038321D /* MasonRIBsSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9320448327CB34050038321D /* Build configuration list for PBXNativeTarget "MasonRIBsSample" */;
@@ -168,6 +295,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					731CDB5F27DCD1B00098ED4F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9320446E27CB34040038321D;
+					};
 					9320446E27CB34040038321D = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -187,11 +318,19 @@
 			projectRoot = "";
 			targets = (
 				9320446E27CB34040038321D /* MasonRIBsSample */,
+				731CDB5F27DCD1B00098ED4F /* MasonRIBsSampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		731CDB5E27DCD1B00098ED4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9320446D27CB34040038321D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,25 +385,54 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		731CDB5C27DCD1B00098ED4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731CDB6A27DCD1CA0098ED4F /* AppRootRouter.swift in Sources */,
+				731CDB6C27DCD2140098ED4F /* TicTacToeMocks.swift in Sources */,
+				731CDB6327DCD1B00098ED4F /* MasonRIBsSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9320446B27CB34040038321D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				731CDB4527DC964E0098ED4F /* OffGameRouter.swift in Sources */,
+				731CDB3227DC86A60098ED4F /* LoggedInBuilder.swift in Sources */,
 				734C959827CBD93200E0BA4E /* LoggedOutInteractor.swift in Sources */,
-				734C958B27CBD05600E0BA4E /* AppRootViewController.swift in Sources */,
-				734C958F27CBD3D300E0BA4E /* AppComponent.swift in Sources */,
+				731CDB5527DCB4B80098ED4F /* TicTacToeViewController.swift in Sources */,
+				734C95A527CDDD9100E0BA4E /* AppRootRouter.swift in Sources */,
+				734C95A627CDDD9100E0BA4E /* AppRootViewController.swift in Sources */,
 				734C959727CBD93200E0BA4E /* LoggedOutBuilder.swift in Sources */,
-				734C958A27CBD05600E0BA4E /* AppRootRouter.swift in Sources */,
+				734C95A827CDDD9100E0BA4E /* AppRootInteractor.swift in Sources */,
+				731CDB3327DC86A60098ED4F /* LoggedInInteractor.swift in Sources */,
+				731CDB4827DC964E0098ED4F /* OffGameInteractor.swift in Sources */,
+				731CDB5627DCB4B80098ED4F /* TicTacToeBuilder.swift in Sources */,
+				731CDB5427DCB4B80098ED4F /* TicTacToeRouter.swift in Sources */,
 				734C959527CBD93200E0BA4E /* LoggedOutRouter.swift in Sources */,
-				734C958D27CBD05600E0BA4E /* AppRootInteractor.swift in Sources */,
 				9320447327CB34040038321D /* AppDelegate.swift in Sources */,
+				731CDB3127DC86A60098ED4F /* LoggedInRouter.swift in Sources */,
 				9320447527CB34040038321D /* SceneDelegate.swift in Sources */,
+				731CDB4627DC964E0098ED4F /* OffGameViewController.swift in Sources */,
 				734C959627CBD93200E0BA4E /* LoggedOutViewController.swift in Sources */,
-				734C958C27CBD05600E0BA4E /* AppRootBuilder.swift in Sources */,
+				731CDB4727DC964E0098ED4F /* OffGameBuilder.swift in Sources */,
+				734C95AA27CDDDF200E0BA4E /* AppComponent.swift in Sources */,
+				731CDB5727DCB4B80098ED4F /* TicTacToeInteractor.swift in Sources */,
+				734C95A727CDDD9100E0BA4E /* AppRootBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		731CDB6527DCD1B00098ED4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9320446E27CB34040038321D /* MasonRIBsSample */;
+			targetProxy = 731CDB6427DCD1B00098ED4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9320447D27CB34050038321D /* LaunchScreen.storyboard */ = {
@@ -278,6 +446,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		731CDB6727DCD1B00098ED4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moon.MasonRIBsSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasonRIBsSample.app/MasonRIBsSample";
+			};
+			name = Debug;
+		};
+		731CDB6827DCD1B00098ED4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moon.MasonRIBsSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasonRIBsSample.app/MasonRIBsSample";
+			};
+			name = Release;
+		};
 		9320448127CB34050038321D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -451,6 +653,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		731CDB6627DCD1B00098ED4F /* Build configuration list for PBXNativeTarget "MasonRIBsSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731CDB6727DCD1B00098ED4F /* Debug */,
+				731CDB6827DCD1B00098ED4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9320446A27CB34040038321D /* Build configuration list for PBXProject "MasonRIBsSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

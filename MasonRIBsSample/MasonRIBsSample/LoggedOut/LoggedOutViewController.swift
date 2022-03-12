@@ -14,6 +14,7 @@ protocol LoggedOutPresentableListener: AnyObject {
     // TODO: Declare properties and methods that the view controller can invoke to perform
     // business logic, such as signIn(). This protocol is implemented by the corresponding
     // interactor class.
+    func login(withPlayer1Name player1Name: String?, player2Name: String?)
 }
 
 final class LoggedOutViewController: UIViewController, LoggedOutPresentable, LoggedOutViewControllable {
@@ -72,6 +73,6 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
     }
 
     @objc private func didTapLoginButton() {
-
+        listener?.login(withPlayer1Name: player1Field?.text, player2Name: player2Field?.text)
     }
 }

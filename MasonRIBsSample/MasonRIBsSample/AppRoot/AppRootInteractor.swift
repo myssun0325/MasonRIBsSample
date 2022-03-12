@@ -2,7 +2,7 @@
 //  AppRootInteractor.swift
 //  MasonRIBsSample
 //
-//  Created by YoungsunMoon on 2022/02/28.
+//  Created by YoungsunMoon on 2022/03/01.
 //
 
 import RIBs
@@ -10,6 +10,7 @@ import RxSwift
 
 protocol AppRootRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+    func routeToLoggedIn(withPlayer1Name player1Name: String, player2Name: String)
 }
 
 protocol AppRootPresentable: Presentable {
@@ -41,5 +42,10 @@ final class AppRootInteractor: PresentableInteractor<AppRootPresentable>, AppRoo
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
+    }
+    
+    // MARK: - LoggedOutListener
+    func didLogin(withPlayer1Name player1Name: String, player2Name: String) {
+        router?.routeToLoggedIn(withPlayer1Name: player1Name, player2Name: player2Name)
     }
 }

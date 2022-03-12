@@ -19,6 +19,7 @@ protocol LoggedOutPresentable: Presentable {
 
 protocol LoggedOutListener: AnyObject {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
+    func didLogin(withPlayer1Name player1Name: String, player2Name: String)
 }
 
 final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, LoggedOutInteractable, LoggedOutPresentableListener {
@@ -41,5 +42,21 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
+    }
+    
+    // MARK: - LoggedOutPresentableListener
+    
+    func login(withPlayer1Name player1Name: String?, player2Name: String?) {
+        let player1NameWithDefault = playerName(player1Name, withDefaultName: "Player 1")
+        let player2NameWithDefault = playerName(player2Name, withDefaultName: "Player 2")
+        listener?.didLogin(withPlayer1Name: player1NameWithDefault, player2Name: player2NameWithDefault)
+    }
+    
+    private func playerName(_ name: String?, withDefaultName defaultName: String) -> String {
+        if let name = name {
+            return name.isEmpty ? defaultName : name
+        } else {
+            return defaultName
+        }
     }
 }

@@ -2,7 +2,7 @@
 //  AppComponent.swift
 //  MasonRIBsSample
 //
-//  Created by YoungsunMoon on 2022/02/28.
+//  Created by YoungsunMoon on 2022/03/01.
 //
 
 import RIBs
