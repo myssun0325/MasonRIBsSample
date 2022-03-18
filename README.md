@@ -1,2 +1,1 @@
-# MasonRIBsSample
-RIBs 튜토리얼
+https://github.com/uber/RIBs/wiki
